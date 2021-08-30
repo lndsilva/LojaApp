@@ -8,41 +8,61 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <ImageView
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:scaleType="centerCrop"
             android:src="@drawable/school" />
 
         <EditText
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_baseline_person"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Insira seu usuário" />
 
         <EditText
+            android:layout_marginTop="10dp"
+            android:padding="10dpdp"
+            android:drawableEnd="@drawable/ic_baseline_lock"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Insira sua senha" />
 
         <LinearLayout
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
- 
+
             <Button
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Entrar" />
 
             <Button
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sair" />
         </LinearLayout>
+
+        <TextView
+            android:layout_marginRight="10sp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não tem conta? Cadastre-se"
+            />
 
     </LinearLayout>
 
